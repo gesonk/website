@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#output {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#data-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#data-table th,
+#data-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+#data-table th {
+  background-color: #f2f2f2;
+}
+
+#data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#output img {
+  width: 150px; /* Adjust the width to your preference */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add space around each image */
+  padding: 10px; /* Add padding around each image */
+  box-sizing: border-box; /* Include padding in image dimensions */
+}
+button:hover {
+    background-color: #3e8e41;
+}
+
+#content {
+    margin-bottom: 30px;
+}
+
+#copyright {
+    text-align: center;
+}
