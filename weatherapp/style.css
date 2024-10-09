@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #5297d4; /* Light blue background */
+  color: #333; /* Darker text for better readability */
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  max-width: 400px;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff; /* White background for the card */
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for shadow */
+  animation: bounceIn 1.2s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); } /* Creates a bounce effect */
+}
+
+.container:hover {
+  transform: translateY(-10px) scale(1.02); /* Slight lift when hovered */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px; /* Slightly smaller title */
+  text-align: center;
+  color: #2980b9; /* A light blue color for the title */
+}
+
+.form-rounded {
+  border-radius: 2em;
+}
+
+.back-card {
+  border-radius: 40px !important;
+  background: #e0f7fa; /* Light cyan background for the back card */
+  padding: 20px;
+}
+
+.city-name {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Darker color for better contrast on light background */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.city-name:hover {
+  transform: scale(1.05); /* Slight scale up on hover */
+  color: #2980b9; /* Light blue color on hover */
+}
+
+.city-name p {
+  font-size: 16pt; /* Slightly larger font size */
+  font-weight: 400;
+}
+
+.city-name span {
+  font-weight: 400;
+  font-size: 30pt; /* Slightly smaller font size */
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  top: -30px;
+  color: #34495e; /* Darker gray-blue color for the city name span */
+}
+
+.temp span {
+  font-weight: 100;
+  font-size: 4em;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  animation: pulse 2s infinite, glow 2s infinite alternate; /* Added glowing effect */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Gently increases size */
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.card-mid {
+  line-height: 1.2;
+}
+
+.condition {
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.condition:hover {
+  color: #e67e22; /* Light orange color when hovered */
+}
+
+.high::before, .low::before {
+  width: 12px;
+  height: 18px;
+}
+
+.icon-container {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #81c4f2, #5bc0de); /* Light gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradientShift 5s infinite; /* Background gradient animation */
+}
+
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(135deg, #81c4f2, #5bc0de);
+  }
+  50% {
+    background: linear-gradient(135deg, #ffb3ba, #ff677d);
+  }
+  100% {
+    background: linear-gradient(135deg, #81c4f2, #5bc0de);
+  }
+}
+
+.icon-container:hover {
+  transform: rotate(360deg); /* Spin effect on hover */
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon-container img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.card-bottom {
+  line-height: 1.2;
+}
+
+.card-bottom span {
+  font-size: 14px;
+}
+
+.card-bottom p {
+  font-size: 36px; /* Slightly smaller font size */
+  font-weight: 100;
+  letter-spacing: -1px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.card-bottom p:hover {
+  color: #3498db; /* Lighter blue on hover */
+}
