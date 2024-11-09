@@ -1,0 +1,160 @@
+/* style.css */
+
+/* General Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1.game-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px #6c757d;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+  }
+  
+  /* Game Container */
+  .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Canvas */
+  #gameCanvas {
+    border: 3px solid #343a40;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Info Panel */
+  .info-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .score-box, .level-box, .leaderboard {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px;
+    width: 120px;
+    margin-top: 10px;
+  }
+  
+  .score-box h2, .level-box h2, .leaderboard h2 {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 5px;
+  }
+  
+  #score, #level {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  .leaderboard li {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Player Info */
+  #player-info {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  #player-name {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  /* Mobile Controls */
+  #controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  #controls button {
+    width: 70px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: #ffffff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+
+
+/* Game Over Overlay */
+#game-over-overlay {
+    position: absolute;
+    top: 50px;  /* Adjust this to be above the console area */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100; /* Ensure it appears above other elements */
+    display: none; /* Hidden by default */
+  }
+  
+  /* Button to restart game inside overlay */
+  #game-over-overlay button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #game-over-overlay button:hover {
+    background-color: #0056b3;
+  }
+  
